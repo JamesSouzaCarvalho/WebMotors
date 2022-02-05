@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WebMotors.Domain/1.0.0": {
+        "dependencies": {
+          "WebMotors.CrossCutting": "1.0.0"
+        },
+        "runtime": {
+          "WebMotors.Domain.dll": {}
+        }
+      },
+      "WebMotors.CrossCutting/1.0.0": {
+        "runtime": {
+          "WebMotors.CrossCutting.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebMotors.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebMotors.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

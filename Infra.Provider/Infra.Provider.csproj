@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>WebMotors.Infra.Provider</AssemblyName>
+    <RootNamespace>WebMotors.Infra.Provider</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infra.Provider.DesafioOnLine\Infra.Provider.DesafioOnLine.csproj" />
+  </ItemGroup>
+
+</Project>

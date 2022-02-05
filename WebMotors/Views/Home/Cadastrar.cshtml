@@ -1,0 +1,154 @@
+﻿@model WebMotors.Domain.Entities.Anuncio
+
+@{
+    ViewBag.Title = ":: WebMotors ::";
+}
+
+<div class="col-lg-13">
+    <h1 class="page-header">Anúncios</h1>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Cadastrar</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-10">
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.Id)
+
+                                <div class="form-group">
+                                    @Html.Label("ID", "Marca", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownListFor(model => model.Marca, new SelectList(ViewBag.Marcas, "ID", "Name"), new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Marca, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("ID", "Modelo", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+
+                                        <select class="form-control" id="Modelo" name="Modelo">                            </select>
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Modelo" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    @Html.Label("ID", "Versao", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+
+                                        <select class="form-control" id="Versao" name="Versao">                            </select>
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Versao" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("Ano", "Ano", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-2">
+                                        @Html.EditorFor(model => model.Ano, new { htmlAttributes = new { @class = "form-control class-focusin" } })
+                                        @Html.ValidationMessageFor(model => model.Ano, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("Quilometragem", "Quilometragem", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Quilometragem, new { htmlAttributes = new { @class = "form-control class-focusin" } })
+                                        @Html.ValidationMessageFor(model => model.Quilometragem, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    @Html.Label("Observação", "Observação", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Observacao, new { htmlAttributes = new { @class = "form-control class-focusin" } })
+                                        @Html.ValidationMessageFor(model => model.Observacao, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Salvar" name="Cadastrar" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        <div>
+                            @Html.ActionLink("Voltar", "Listar")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function AplicarMarca(id) {
+        PopularModelos();
+    }
+
+    function PopularModelos() {
+        $("#Modelo").empty();
+        var marcaId = $("#Marca").val();
+
+        $.ajax({
+            type: "GET",
+            url: "/Home/ObterModelos/" + marcaId,
+            success: function (data) {
+                $("#Modelo").empty();
+                $.each(JSON.parse(data), function (index, element) {
+                    $("#Modelo").append('<option value="' + element.ID + '">' + element.Name + '</option>');
+                });
+
+                PopularVersoes();
+            }
+        });
+    }
+
+    function PopularVersoes() {
+        $("#Versao").empty();
+        var modeloId = $("#Modelo").val();
+
+        $.ajax({
+            type: "GET",
+            url: "/Home/ObterVersoes/" + modeloId,
+            success: function (data) {
+                $("#Versao").empty();
+                $.each(JSON.parse(data), function (index, element) {
+                    $("#Versao").append('<option value="' + element.ID + '">' + element.Name + '</option>');
+                });
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        AplicarMarca();
+
+        $("#Marca").focusout(function () {
+            PopularModelos();
+        });
+
+        $("#Marca").change(function () {
+            PopularModelos();
+        });
+
+        $("#Modelo").focusout(function () {
+            PopularVersoes();
+        });
+
+        $("#Modelo").change(function () {
+            PopularVersoes();
+        });
+    });
+</script>

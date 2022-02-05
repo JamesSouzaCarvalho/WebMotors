@@ -1,0 +1,10 @@
+D:\Interviews\WebMotors\CrossCutting\bin\Debug\netcoreapp3.1\WebMotors.CrossCutting.deps.json
+D:\Interviews\WebMotors\CrossCutting\bin\Debug\netcoreapp3.1\WebMotors.CrossCutting.dll
+D:\Interviews\WebMotors\CrossCutting\bin\Debug\netcoreapp3.1\WebMotors.CrossCutting.pdb
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.AssemblyReference.cache
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfoInputs.cache
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CoreCompileInputs.cache
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\WebMotors.CrossCutting.dll
+D:\Interviews\WebMotors\CrossCutting\obj\Debug\netcoreapp3.1\WebMotors.CrossCutting.pdb

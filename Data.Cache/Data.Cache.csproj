@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>WebMotors.Data.Cache</AssemblyName>
+    <RootNamespace>WebMotors.Data.Cache</RootNamespace>
+  </PropertyGroup>
+
+</Project>

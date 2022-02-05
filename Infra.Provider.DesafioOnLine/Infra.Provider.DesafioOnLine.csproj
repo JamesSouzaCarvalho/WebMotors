@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>WebMotors.Infra.Provider.DesafioOnLine</AssemblyName>
+    <RootNamespace>WebMotors.Infra.Provider.DesafioOnLine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="dlls\**" />
+    <EmbeddedResource Remove="dlls\**" />
+    <None Remove="dlls\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="RestSharp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\dlls\RestSharp.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

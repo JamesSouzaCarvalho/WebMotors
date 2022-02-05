@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WebMotors.Infra.Provider/1.0.0": {
+        "dependencies": {
+          "WebMotors.Domain": "1.0.0",
+          "WebMotors.Infra.Provider.DesafioOnLine": "1.0.0"
+        },
+        "runtime": {
+          "WebMotors.Infra.Provider.dll": {}
+        }
+      },
+      "WebMotors.CrossCutting/1.0.0": {
+        "runtime": {
+          "WebMotors.CrossCutting.dll": {}
+        }
+      },
+      "WebMotors.Domain/1.0.0": {
+        "dependencies": {
+          "WebMotors.CrossCutting": "1.0.0"
+        },
+        "runtime": {
+          "WebMotors.Domain.dll": {}
+        }
+      },
+      "WebMotors.Infra.Provider.DesafioOnLine/1.0.0": {
+        "dependencies": {
+          "WebMotors.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WebMotors.Infra.Provider.DesafioOnLine.dll": {}
+        }
+      },
+      "RestSharp/106.11.7.0": {
+        "runtime": {
+          "RestSharp.dll": {
+            "assemblyVersion": "106.11.7.0",
+            "fileVersion": "106.11.7.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebMotors.Infra.Provider/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebMotors.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebMotors.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebMotors.Infra.Provider.DesafioOnLine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestSharp/106.11.7.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

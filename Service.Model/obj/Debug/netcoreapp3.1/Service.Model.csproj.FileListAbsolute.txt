@@ -1,0 +1,9 @@
+D:\Interviews\WebMotors\Service.Model\bin\Debug\netcoreapp3.1\WebMotors.Service.Model.deps.json
+D:\Interviews\WebMotors\Service.Model\bin\Debug\netcoreapp3.1\WebMotors.Service.Model.dll
+D:\Interviews\WebMotors\Service.Model\bin\Debug\netcoreapp3.1\WebMotors.Service.Model.pdb
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\Service.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\Service.Model.AssemblyInfoInputs.cache
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\Service.Model.AssemblyInfo.cs
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\Service.Model.csproj.CoreCompileInputs.cache
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\WebMotors.Service.Model.dll
+D:\Interviews\WebMotors\Service.Model\obj\Debug\netcoreapp3.1\WebMotors.Service.Model.pdb

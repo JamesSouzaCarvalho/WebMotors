@@ -1,0 +1,16 @@
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.Infra.Provider.DesafioOnLine.deps.json
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.Infra.Provider.DesafioOnLine.dll
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.Infra.Provider.DesafioOnLine.pdb
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\RestSharp.dll
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.CrossCutting.dll
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.Domain.dll
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.Domain.pdb
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\bin\Debug\netcoreapp3.1\WebMotors.CrossCutting.pdb
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.csproj.AssemblyReference.cache
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.AssemblyInfoInputs.cache
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.AssemblyInfo.cs
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.csproj.CoreCompileInputs.cache
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\Infra.Provider.DesafioOnLine.csproj.CopyComplete
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\WebMotors.Infra.Provider.DesafioOnLine.dll
+D:\Interviews\WebMotors\Infra.Provider.DesafioOnLine\obj\Debug\netcoreapp3.1\WebMotors.Infra.Provider.DesafioOnLine.pdb
